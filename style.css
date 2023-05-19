@@ -82,7 +82,7 @@ select {
 /* STYLE */
 
 .header {
-  margin-top: 40px;
+  margin-top: 24px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -100,7 +100,7 @@ h1{
 }
 
 body {
-	background: #26262E;
+	background: #080808;
 }
 
 .accordion {
@@ -111,7 +111,7 @@ body {
 	padding: 16px;
 	margin: 16px;
 	gap: 12px;
-	background: #303038;
+	background: #26262E;
 	border-radius: 16px;
 }
 
@@ -169,7 +169,7 @@ a{
 
 .panel {
   padding: 0px;
-	background: #3A3A42;
+	background: #303038;
 	border-radius: 8px;
 	display: flex;
 	flex-direction: column;
@@ -182,7 +182,7 @@ a{
 
 .panel:hover {
     padding: 0px;
-	background: #474751;
+	background: #3A3A42;
 	border-radius: 8px;
 	display: flex;
 	flex-direction: column;
