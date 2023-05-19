@@ -1,0 +1,207 @@
+/* ------------------------------------ */ 
+/* ----------   CSS RESET   ----------- */ 
+/* ------------------------------------ */ 
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+  transition: 0.2s ease-in-out;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+
+
+
+
+
+
+
+/* STYLE */
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+h1{
+	font-family: 'Merriweather', serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	color: #ffffff;
+}
+
+body {
+	background: #26262E;
+}
+
+.accordion {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 16px;
+	margin: 16px;
+	gap: 12px;
+	background: #303038;
+	border-radius: 16px;
+}
+
+h2{
+	font-family: 'Merriweather', serif;
+	color: #A9A9B1;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+h3{
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: #A9A9B1;
+	width: 100%;
+}
+
+.question{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-self: stretch;
+	line-height: 150%;
+}
+
+p{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: #ffffff;
+	max-height: 0;
+	overflow: hidden;
+	align-self: stretch;
+	line-height: 150%;
+	transition: 0.4s ease-in-out;
+}
+
+a{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: #ffffff;
+	line-height: 150%;
+}
+
+.gobackhome{
+	line-height: 0%;
+}
+
+.panel {
+    padding: 0px;
+	background: #3A3A42;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px;
+	align-self: stretch;
+    transition: 0.4s ease-in-out;
+	padding: 12px 16px;
+}
+
+.panel:hover {
+    padding: 0px;
+	background: #474751;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px;
+	align-self: stretch;
+    transition: 0.4s ease-in-out;
+	padding: 12px 16px;
+}
+
+/* Style the accordion panel when it's clicked on */
+.show p {
+    /* max-height: none; */
+	/* display: inline-block; */
+	max-height: 100px;
+	overflow: shown;
+	transition: 0.4s ease-in-out;
+}
+
+.show img {
+	transform: rotate(180deg);
+	transition: 0.4s ease-in-out;
+}
