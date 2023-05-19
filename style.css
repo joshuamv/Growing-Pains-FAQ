@@ -197,12 +197,13 @@ a{
 .show p {
     /* max-height: none; */
 	/* display: inline-block; */
-	max-height: 100px;
+	max-height: 600px;
 	overflow: shown;
 	transition: 0.4s ease-in-out;
 }
 
 .show img {
+	opacity: 0;
 	transform: rotate(180deg);
 	transition: 0.4s ease-in-out;
 }
